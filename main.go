@@ -6,11 +6,11 @@ import (
 	"event-horizon/routes"
 	"event-horizon/store"
 	"event-horizon/utils"
-	"log"
+
 	"net/http"
 	"os"
 
-	"github.com/joho/godotenv"
+
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
@@ -21,9 +21,6 @@ type User struct {
 }
 
 func main() {
-	if err := godotenv.Load(); err != nil {
-		log.Fatal("Error loading .env file")
-	}
 
 	e := echo.New()
 	database := db.ConnectDB()
