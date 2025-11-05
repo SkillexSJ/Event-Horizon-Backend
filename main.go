@@ -28,10 +28,10 @@ func main() {
 	e := echo.New()
 	database := db.ConnectDB()
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins:     []string{"http://localhost:3000", "http://localhost:5173"}, // your frontend URLs
+		AllowOrigins:     []string{"http://localhost:3000", "http://localhost:5173"}, // frontend URLs
 		AllowMethods:     []string{http.MethodGet, http.MethodPost, http.MethodPut, http.MethodDelete, http.MethodOptions},
 		AllowHeaders:     []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept, echo.HeaderAuthorization},
-		AllowCredentials: true, // ✅ REQUIRED when using cookies or Authorization header
+		AllowCredentials: true, //  using cookies or Authorization header
 	}))
 
 	// STARTING THE STORES
