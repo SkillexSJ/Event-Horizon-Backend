@@ -21,7 +21,7 @@ type User struct {
 }
 
 func main() {
-	if err := godotenv.Load(".env"); err != nil {
+	if err := godotenv.Load(); err != nil {
 		log.Fatal("Error loading .env file")
 	}
 
