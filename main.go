@@ -25,7 +25,7 @@ func main() {
 	e := echo.New()
 	database := db.ConnectDB()
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins:     []string{"http://localhost:3000", "http://localhost:5173" , "https://event-horizon-wine.vercel.app" , "https://www.event-horizons.app"}, // frontend URLs
+		AllowOrigins:     []string{"http://localhost:3000", "http://localhost:5173" , "https://event-horizon-wine.vercel.app" , "https://www.event-horizons.app" , "https://go-lang-project-9f592fc57357.herokuapp.com"}, // frontend URLs
 		AllowMethods:     []string{http.MethodGet, http.MethodPost, http.MethodPut, http.MethodDelete, http.MethodOptions},
 		AllowHeaders:     []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept, echo.HeaderAuthorization},
 		AllowCredentials: true, //  using cookies or Authorization header
