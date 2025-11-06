@@ -1,1 +1,1 @@
-web: Backend
+web: ./bin/event-horizon
