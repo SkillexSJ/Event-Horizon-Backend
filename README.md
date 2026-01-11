@@ -29,6 +29,17 @@
 - **💳 Transactional Bookings**: ACID transactions for booking integrity (pending/confirmed/cancelled statuses).
 - **👥 Role-Based Access**: Distinct `User` and `Host` capabilities.
 
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+|                                              Core                                               |                                                 Database                                                  |                                                 Infra                                                  |
+| :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| <img src="https://skillicons.dev/icons?i=go" width="48" height="48" alt="Go" /><br/>**Go 1.25** | <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" /><br/>**MongoDB** | <img src="https://skillicons.dev/icons?i=heroku" width="48" height="48" alt="Heroku" /><br/>**Heroku** |
+
+</div>
+
 ## 🗺️ Authentication Flow
 
 ```mermaid
